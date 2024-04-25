@@ -1,5 +1,6 @@
 import SubjectList from "./SubjectList";
 import Counter from "./Counter";
+import TempConverter from "./TempConverter";
 
 const CMSCSubjects = [
     {code: "CMSC100", description: "Web Programming", id: 1},
@@ -17,8 +18,10 @@ function App() {
     return (
         <div>
             Hello World!
-            <SubjectList data={CMSCSubjects} title={"Computer Science"}/>
-            <SubjectList data={CHEMSubjects} title={"Chemistry"}/>
+            <SubjectList list={CMSCSubjects} title={"Computer Science"}/>
+            <SubjectList list={CHEMSubjects} title={"Chemistry"}/>
+            <Counter val={10}/>
+            <TempConverter />
         </div>
     );
 }
